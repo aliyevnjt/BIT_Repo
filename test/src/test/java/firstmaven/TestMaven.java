@@ -22,7 +22,9 @@ public class TestMaven {
 	@Test
 	public void test1() {
 		driver.get("http://newtours.demoaut.com/");
+
 		// comment from Kamran
+		
 	}
 	
 	@After
