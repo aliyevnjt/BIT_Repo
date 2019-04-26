@@ -22,17 +22,10 @@ public class TestMaven {
 	@Test
 	public void test1() {
 		driver.get("http://newtours.demoaut.com/");
-<<<<<<< HEAD
 		// steps in command: git add -A, git commit -m "dsd", git push
 		//change from Mehmet
-=======
 
-		// some comment .....
-		// change from Fehmi
-		// Nijat
-		//change from Gozal
 
->>>>>>> 0a636357877ac26d3076497bb97001319230684b
 	}
 	
 	@After
