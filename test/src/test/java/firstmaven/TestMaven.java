@@ -29,8 +29,6 @@ public class TestMaven {
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
 		driver.get("https://www.cars.com/");
 	}
 
@@ -50,13 +48,10 @@ public class TestMaven {
 		WebElement search = driver.findElement(By.xpath("//input[@class='NZE2g']"));
 		wait.until(ExpectedConditions.elementToBeClickable(search));
 		search.click();
+
 		String expectedHeader = "New Audi S5 for Sale";
 		String actualHeader = driver.findElement(By.xpath("//h1[@class='srp-header']")).getText();
 		Assert.assertEquals(expectedHeader, actualHeader);
-
-	
-
-
 
 	}
 	
@@ -69,7 +64,7 @@ public class TestMaven {
 	public void tearDown() {
 
 
-		//driver.quit();
+		driver.quit();
 
 	}
 }
