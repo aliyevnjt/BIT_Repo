@@ -1,8 +1,8 @@
 package firstmaven;
 
 import java.util.concurrent.TimeUnit;
-
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -24,12 +24,17 @@ public class TestMaven {
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 		driver.get("https://www.cars.com/");
 	}
 
 	@Test
 	public void test1() {
+
 		Assert.assertTrue(driver.getTitle().contains("New Cars"));
 		System.out.println(driver.getTitle());
 		WebElement selectAstockType = driver.findElement(By.xpath("//select[@name='stockType']"));
@@ -51,6 +56,7 @@ public class TestMaven {
 	public static void selectByText(WebElement element, String visibleText) {
 		Select select = new Select(element);
 		select.selectByVisibleText(visibleText);
+
 	}
 
 	@After
