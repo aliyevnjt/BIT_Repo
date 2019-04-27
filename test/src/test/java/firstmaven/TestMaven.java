@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
+
 
 public class TestMaven {
 
@@ -30,14 +30,19 @@ public class TestMaven {
 
 	@Test
 	public void test1() {
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3fcf6540f4a3d154a7cb817b7f979b9e85f04eef
 		Assert.assertTrue(driver.getTitle().contains("New Cars"));
 		System.out.println(driver.getTitle());
 		WebElement selectAstockType = driver.findElement(By.xpath("//select[@name='stockType']"));
 		WebElement selectAmake = driver.findElement(By.xpath("//select[@name='makeId']"));
 		WebElement selectAmodel = driver.findElement(By.xpath("//select[@name='modelId']"));
-		selectByText(selectAstockType, "New Cars");
-		selectByText(selectAmake, "Audi");
-		selectByText(selectAmodel, "S5");
+		selectBytext(selectAstockType, "New Cars");
+		selectBytext(selectAmake, "Audi");
+		selectBytext(selectAmodel, "S5");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement search = driver.findElement(By.xpath("//input[@class='NZE2g']"));
 		wait.until(ExpectedConditions.elementToBeClickable(search));
@@ -46,15 +51,33 @@ public class TestMaven {
 		String actualHeader = driver.findElement(By.xpath("//h1[@class='srp-header']")).getText();
 		Assert.assertEquals(expectedHeader, actualHeader);
 
-	}
+	
 
+<<<<<<< HEAD
 	public static void selectByText(WebElement element, String visibleText) {
 		Select select = new Select(element);
 		select.selectByVisibleText(visibleText);
+=======
+
+
+	}
+	
+	public static void selectBytext(WebElement element, String visibleText) {
+		Select select =  new Select(element);
+		select.selectByVisibleText(visibleText);
+
+>>>>>>> 3fcf6540f4a3d154a7cb817b7f979b9e85f04eef
 	}
 
 	@After
 	public void tearDown() {
+<<<<<<< HEAD
 //		driver.quit();
+=======
+
+
+		//driver.quit();
+
+>>>>>>> 3fcf6540f4a3d154a7cb817b7f979b9e85f04eef
 	}
 }
