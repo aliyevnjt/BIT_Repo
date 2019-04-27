@@ -6,29 +6,25 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestMaven {
-	
+
 	WebDriver driver;
-	
+
 	@Before
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
-	
+
 	@Test
 	public void test1() {
 		driver.get("http://newtours.demoaut.com/");
-
-
-		// comment from Kamran's laptop
-		//Khazar
-
-
 	}
+
+	// comment from Kamran's laptop
+	// Khazar
 
 	@After
 	public void tearDown() {
