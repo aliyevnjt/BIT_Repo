@@ -24,6 +24,7 @@ public class TestMaven {
 		driver.get("http://newtours.demoaut.com/");
 
 		// comment from Kamran's laptop
+		//Khazar
 
 	}
 
