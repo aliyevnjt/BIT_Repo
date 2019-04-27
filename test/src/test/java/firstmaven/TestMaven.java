@@ -39,6 +39,15 @@ public class TestMaven {
 		driver.get("https://www.cars.com/");
 >>>>>>> Stashed changes
 	}
+	
+//	aman Allahim
+//	eger bu yaziyi okuyorsaniz bilin ki ben coktaan cok uzak diyarlardan git push yapmisim demektir.
+//	
+//	FFFFFF  EEEEEE	H 	 H	M	  M	 I			
+//	F	    E		H	 H	MM   MM	 I
+//	FFFFFF  EEEE	HHHHHH	M M M M	 I		FEHMI EVDE SIGARA ICME, TERBIYESIZ FEHMI
+//	F	    E		H	 H	M  M  M	 I
+//	F		EEEEEE	H	 H	M	  M	 I
 
 	@Test
 	public void test1() {
