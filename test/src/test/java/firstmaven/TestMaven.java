@@ -24,14 +24,18 @@ public class TestMaven {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 
-		driver.get("https://www.cars.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		driver.get("https://www.cars.com/");
+	
 	}
 
 	@Test
 	public void test1() {
 
+
 		assertTrue(driver.getTitle().contains("New Cars"));
+
 		System.out.println(driver.getTitle());
 
 		WebElement selectAstockType = driver.findElement(By.xpath("//select[@name='stockType']"));
@@ -49,6 +53,7 @@ public class TestMaven {
 
 		String expectedHeader = "New Audi S5 for Sale";
 		String actualHeader = driver.findElement(By.xpath("//h1[@class='srp-header']")).getText();
+
 		assertEquals(expectedHeader, actualHeader);
 
 	}
@@ -56,13 +61,14 @@ public class TestMaven {
 	public static void selectByText(WebElement element, String visibleText) {
 		Select select = new Select(element);
 		select.selectByVisibleText(visibleText);
-
 	}
-
 	@After
 	public void tearDown() {
 
+
 //		driver.quit();
+
+
 
 	}
 }
