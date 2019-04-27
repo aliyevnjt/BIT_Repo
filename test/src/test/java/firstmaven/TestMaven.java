@@ -26,10 +26,7 @@ public class TestMaven {
 
 		
 
-		// some comment .....
-		// change from Fehmi
-		// Nijat
-		// New line
+		// Bonjour 
 
 	}
 
