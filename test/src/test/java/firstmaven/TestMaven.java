@@ -31,6 +31,7 @@ public class TestMaven {
 	}
 	
 //	aman Allahim
+//	eger bu yaziyi okuyorsaniz bilin ki ben coktaan cok uzak diyarlardan git push yapmisim demektir.
 
 	@Test
 	public void test1() {
