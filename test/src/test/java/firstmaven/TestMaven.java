@@ -24,7 +24,7 @@ public class TestMaven {
 		driver.get("http://newtours.demoaut.com/");
 
 
-		
+		//change from Gozal
 
 		// some comment .....
 		// change from Fehmi
