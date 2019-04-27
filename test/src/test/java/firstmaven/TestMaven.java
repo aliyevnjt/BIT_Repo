@@ -23,11 +23,12 @@ public class TestMaven {
 		driver.get("http://newtours.demoaut.com/");
 		
 		// steps in command: git add -A, git commit -m "dsd", git push
+		
 		// A useful link : http://rogerdudler.github.io/git-guide/
 	}
 
 	@After
 	public void tearDown() {
-		driver.quit();
+//		driver.quit();
 	}
 }
