@@ -25,6 +25,7 @@ public class TestMaven {
 		// steps in command: git add -A, git commit -m "dsd", git push
 		
 		// A useful link : http://rogerdudler.github.io/git-guide/
+		//from Khazar
 	}
 
 	@After
