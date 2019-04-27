@@ -24,7 +24,6 @@ public class TestMaven {
 		driver.get("http://newtours.demoaut.com/");
 
 
-		// comment from Kamran's laptop
 		
 
 		// some comment .....
@@ -33,7 +32,7 @@ public class TestMaven {
 		// New line
 
 	}
-	
+
 	@After
 	public void tearDown() {
 		driver.quit();
