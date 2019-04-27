@@ -21,6 +21,7 @@ public class TestMaven {
 	@Test
 	public void test1() {
 		driver.get("http://newtours.demoaut.com/");
+		
 		// steps in command: git add -A, git commit -m "dsd", git push
 		// A useful link : http://rogerdudler.github.io/git-guide/
 	}
