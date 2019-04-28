@@ -49,6 +49,7 @@ public class TestMaven {
 		String expectedHeader = "New Audi S5 for Sale";
 		String actualHeader = driver.findElement(By.xpath("//h1[@class='srp-header']")).getText();
 		Assert.assertEquals(expectedHeader, actualHeader);
+		//Changes in branch DEV
 	}
 
 	public static void selectByText(WebElement element, String visibleText) {
