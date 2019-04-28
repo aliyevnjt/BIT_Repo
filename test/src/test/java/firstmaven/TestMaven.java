@@ -16,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
 public class TestMaven {
 
 	WebDriver driver;
@@ -49,22 +48,18 @@ public class TestMaven {
 		String expectedHeader = "New Audi S5 for Sale";
 		String actualHeader = driver.findElement(By.xpath("//h1[@class='srp-header']")).getText();
 		Assert.assertEquals(expectedHeader, actualHeader);
+		// Changes in branch DEV // changes by me
 	}
 
 	public static void selectByText(WebElement element, String visibleText) {
 		Select select = new Select(element);
 		select.selectByVisibleText(visibleText);
 	}
-	
-	
 
 	@After
 	public void tearDown() {
 
-
-
 		driver.quit();
-
 
 	}
 }
