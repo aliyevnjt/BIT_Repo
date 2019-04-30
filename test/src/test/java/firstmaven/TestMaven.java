@@ -22,7 +22,7 @@ public class TestMaven {
 
 	@Before
 	public void setUp() {
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -59,7 +59,7 @@ public class TestMaven {
 	@After
 	public void tearDown() {
 
-		driver.quit();
+//		driver.quit();
 
 	}
 }
