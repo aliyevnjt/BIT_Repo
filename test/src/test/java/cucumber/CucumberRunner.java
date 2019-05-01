@@ -5,11 +5,13 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-@RunWith(Cucumber.class)
+
 @CucumberOptions(
-		features= {"src/test/resources/features"}
-		
+		features = "src/features",
+		glue = {"firstmaven"},
+		dryRun = false
 )
+@RunWith(Cucumber.class)
 public class CucumberRunner {
 
 }
