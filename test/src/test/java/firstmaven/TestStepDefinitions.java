@@ -23,8 +23,6 @@ public class TestStepDefinitions {
 		driver = new ChromeDriver();
 	}
 	
-	
-
 	@Then("I get a title of website and assert it equals to My Store")
 	public void i_get_a_title_of_website_and_assert_it_equals_to_My_Store() {
 		driver.get("http://automationpractice.com/index.php");
