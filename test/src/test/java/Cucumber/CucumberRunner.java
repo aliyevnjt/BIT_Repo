@@ -1,4 +1,4 @@
-package Cucumber;
+package cucumber;
 
 import org.junit.runner.RunWith;
 
@@ -11,6 +11,7 @@ import cucumber.api.junit.Cucumber;
 		glue = {"firstmaven"},
 		dryRun = false
 )
+
 @RunWith(Cucumber.class)
 
 public class CucumberRunner {
