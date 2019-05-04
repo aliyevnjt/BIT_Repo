@@ -11,7 +11,7 @@ public class Driver {
 	private static WebDriver driver;
 
 	public static WebDriver getDriver() {
-
+		if(driver==null) {
 		switch (ConfigurationReader.getProperty("browser")) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
@@ -23,8 +23,15 @@ public class Driver {
 			driver = new FirefoxDriver();
 			return driver;
 		}
-
+		}
 		return driver;
 	}
-
+	
+	public static void closeDriver() {
+		if(driver!=null) {
+			driver.close();
+			driver.quit();
+		}
+	}
+	
 }

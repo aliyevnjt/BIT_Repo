@@ -1,5 +1,6 @@
+pages/HomePage.class
+stepDefinitions/Hooks.class
 runners/TestRunner.class
 utils/ConfigurationReader.class
 utils/Driver.class
-pages/HomePage.class
 stepDefinitions/GoogleSearch.class

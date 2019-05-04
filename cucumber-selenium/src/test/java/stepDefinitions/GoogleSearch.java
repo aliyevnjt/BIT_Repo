@@ -15,18 +15,16 @@ import utils.Driver;
 public class GoogleSearch {
 	
 	WebDriver driver;
-	HomePage homePage; 
+	HomePage homePage = new HomePage();
 	
 	@Given("I am on home page")
 	public void i_am_on_home_page() {
-	    WebDriverManager.chromedriver().setup();
-	    driver = Driver.getDriver();
+		driver = Driver.getDriver();
 	    driver.get(ConfigurationReader.getProperty("url"));
 	}
 
 	@Then("search for something")
 	public void search_for_something() {
-		homePage = new HomePage(driver);
 		homePage.searchBox.sendKeys("hello" + Keys.ENTER);
 	}
 }

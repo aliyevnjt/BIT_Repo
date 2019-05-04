@@ -12,8 +12,8 @@ import utils.Driver;
 public class HomePage {
 	WebDriver driver;
 
-	public HomePage(WebDriver driver) {
-		this.driver = driver;
+	public HomePage() {
+		this.driver = Driver.getDriver();
 	     PageFactory.initElements(driver, this);
 	}
 	
