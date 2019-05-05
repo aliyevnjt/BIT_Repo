@@ -1,7 +1,9 @@
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/utils/Driver.java
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/runners/TestRunner.java
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/pages/HomePage.java
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/utils/ConfigurationReader.java
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/stepDefinitions/GoogleSearch.java
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/stepDefinitions/NewSearch.java
-/Users/nijataliyev/eclipse-workspace/cucumber-selenium/src/test/java/stepDefinitions/Hooks.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/utils/Driver.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/stepDefinitions/NewSearch.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/pages/KBBHomePage.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/utils/ConfigurationReader.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/stepDefinitions/KBBMenuBarSteps.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/stepDefinitions/GoogleSearch.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/runners/TestRunner.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/pages/HomePage.java
+/Users/nijataliyev/repos/cucumber-selenium/src/test/java/stepDefinitions/Hooks.java
