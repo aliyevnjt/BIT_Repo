@@ -12,7 +12,8 @@ import cucumber.api.junit.Cucumber;
 		        "html:target/site/cucumber-pretty",
 		        "json:target/cucumber.json" },
 		features = "src/test/resources/functionaltests", 
-		glue = { "stepDefinitions" }
+		glue = { "stepDefinitions" },
+		dryRun = false
 		)
 
 public class TestRunner {

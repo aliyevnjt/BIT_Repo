@@ -19,12 +19,14 @@ public class GoogleSearch {
 	
 	@Given("I am on home page")
 	public void i_am_on_home_page() {
+		System.out.println("I am on Home Page");
 		driver = Driver.getDriver();
-	    driver.get(ConfigurationReader.getProperty("url"));
+		driver.navigate().to(ConfigurationReader.getProperty("url"));
 	}
 
 	@Then("search for something")
 	public void search_for_something() {
 		homePage.searchBox.sendKeys("hello" + Keys.ENTER);
+		
 	}
 }

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-05-04T20:41:14.929Z",
+        "start_timestamp": "2019-05-05T12:56:13.449Z",
         "line": 5,
         "name": "Title of your scenario",
         "description": "",
@@ -11,11 +11,11 @@
         "after": [
           {
             "result": {
-              "duration": 172658159,
+              "duration": 210470955,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setUp()"
+              "location": "Hooks.tearDown()"
             }
           }
         ],
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6741580664,
+              "duration": 7114886092,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 1481877005,
+              "duration": 2062923091,
               "status": "passed"
             },
             "line": 7,
@@ -54,6 +54,63 @@
     "id": "title-of-your-feature",
     "keyword": "Feature",
     "uri": "file:src/test/resources/functionaltests/test.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-05-05T12:56:22.841Z",
+        "line": 5,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "title-of-your-feature;title-of-your-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 167553220,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2609917386,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on home page",
+            "match": {
+              "location": "GoogleSearch.i_am_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2096544726,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Another search for something",
+            "match": {
+              "location": "NewSearch.another_search_for_something()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionaltests/testt.feature",
     "tags": []
   }
 ]
