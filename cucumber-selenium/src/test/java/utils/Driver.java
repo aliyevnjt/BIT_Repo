@@ -9,7 +9,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Driver {
 
 	private static WebDriver driver;
-
+	private Driver() {}
+	
 	public static WebDriver getDriver() {
 		if(driver==null) {
 		switch (ConfigurationReader.getProperty("browser")) {
@@ -31,6 +32,8 @@ public class Driver {
 		if(driver!=null) {
 			driver.close();
 			driver.quit();
+			driver = null;
+
 		}
 	}
 	

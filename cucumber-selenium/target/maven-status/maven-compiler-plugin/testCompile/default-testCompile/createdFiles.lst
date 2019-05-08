@@ -1,6 +1,0 @@
-pages/HomePage.class
-stepDefinitions/Hooks.class
-runners/TestRunner.class
-utils/ConfigurationReader.class
-utils/Driver.class
-stepDefinitions/GoogleSearch.class

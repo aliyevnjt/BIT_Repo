@@ -21,6 +21,7 @@ public class ConfigurationReader {
 	}
 
 	public static String getProperty(String str) {
+		
 		return prop.getProperty(str);
 	}
 }
