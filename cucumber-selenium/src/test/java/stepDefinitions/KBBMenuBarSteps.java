@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,7 @@ public class KBBMenuBarSteps {
 	@Given("I am on KBB Home Page")
 	public void i_am_on_KBB_Home_Page() {
 		driver = Driver.getDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.navigate().to(ConfigurationReader.getProperty("url"));
 	}
 

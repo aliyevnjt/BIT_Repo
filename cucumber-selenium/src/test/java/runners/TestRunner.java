@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 		        "json:target/cucumber.json" },
 		features = "src/test/resources/functionaltests", 
 		glue = { "stepDefinitions" },
-		tags = {""},
+		tags = {"@PriceCar"},
 		dryRun = false
 		)
 
