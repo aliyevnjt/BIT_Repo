@@ -1,0 +1,136 @@
+10:07:56.208 request:
+1 > GET http://localhost:3000/actor?first_name=eq.Lucille
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+10:07:56.254 response time in milliseconds: 41.35
+1 < 200
+1 < Content-Location: /actor?first_name=eq.Lucille
+1 < Content-Range: 0-1/*
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 May 2019 14:07:56 GMT
+1 < Server: postgrest/5.2.0 (1e732ac)
+1 < Transfer-Encoding: chunked
+[{"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-26T09:07:13.02167"}, 
+ {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-26T09:07:12.999576"}]
+
+10:07:56.327 [print] [
+  {
+    "actor_id": 138,
+    "first_name": "Lucille",
+    "last_name": "Dee",
+    "last_update": "2019-05-26T09:07:13.02167"
+  },
+  {
+    "actor_id": 20,
+    "first_name": "Lucille",
+    "last_name": "Tracy",
+    "last_update": "2019-05-26T09:07:12.999576"
+  }
+]
+
+10:07:56.340 request:
+2 > PUT http://localhost:3000/actor?actor_id=eq.20
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 95
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: localhost:3000
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"actor_id":20,"first_name":"Jenny","last_name":"Tracy","last_update":"2013-05-26T14:47:57.62"}
+
+10:07:56.357 response time in milliseconds: 17.02
+2 < 204
+2 < Date: Sun, 26 May 2019 14:07:56 GMT
+2 < Server: postgrest/5.2.0 (1e732ac)
+
+10:07:56.358 [print] 
+10:07:56.362 request:
+3 > PUT http://localhost:3000/actor?actor_id=eq.138
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 94
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: localhost:3000
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"actor_id":138,"first_name":"Jenny","last_name":"Dee","last_update":"2013-05-26T14:47:57.62"}
+
+10:07:56.371 response time in milliseconds: 8.89
+3 < 204
+3 < Date: Sun, 26 May 2019 14:07:56 GMT
+3 < Server: postgrest/5.2.0 (1e732ac)
+
+10:07:56.371 [print] 
+10:07:56.373 request:
+4 > PUT http://localhost:3000/actor?actor_id=eq.20
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Content-Length: 97
+4 > Content-Type: application/json; charset=UTF-8
+4 > Host: localhost:3000
+4 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2013-05-26T14:47:57.62"}
+
+10:07:56.376 response time in milliseconds: 3.13
+4 < 204
+4 < Date: Sun, 26 May 2019 14:07:56 GMT
+4 < Server: postgrest/5.2.0 (1e732ac)
+
+10:07:56.376 [print] 
+10:07:56.378 request:
+5 > PUT http://localhost:3000/actor?actor_id=eq.138
+5 > Accept-Encoding: gzip,deflate
+5 > Connection: Keep-Alive
+5 > Content-Length: 96
+5 > Content-Type: application/json; charset=UTF-8
+5 > Host: localhost:3000
+5 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+{"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2013-05-26T14:47:57.62"}
+
+10:07:56.381 response time in milliseconds: 3.17
+5 < 204
+5 < Date: Sun, 26 May 2019 14:07:56 GMT
+5 < Server: postgrest/5.2.0 (1e732ac)
+
+10:07:56.382 [print] 
+10:07:56.385 request:
+6 > GET http://localhost:3000/actor?first_name=eq.Lucille
+6 > Accept-Encoding: gzip,deflate
+6 > Connection: Keep-Alive
+6 > Host: localhost:3000
+6 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+10:07:56.389 response time in milliseconds: 4.12
+6 < 200
+6 < Content-Location: /actor?first_name=eq.Lucille
+6 < Content-Range: 0-1/*
+6 < Content-Type: application/json; charset=utf-8
+6 < Date: Sun, 26 May 2019 14:07:56 GMT
+6 < Server: postgrest/5.2.0 (1e732ac)
+6 < Transfer-Encoding: chunked
+[{"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-26T10:07:56.379817"}, 
+ {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-26T10:07:56.374823"}]
+
+10:07:56.390 [print] [
+  {
+    "actor_id": 138,
+    "first_name": "Lucille",
+    "last_name": "Dee",
+    "last_update": "2019-05-26T10:07:56.379817"
+  },
+  {
+    "actor_id": 20,
+    "first_name": "Lucille",
+    "last_name": "Tracy",
+    "last_update": "2019-05-26T10:07:56.374823"
+  }
+]
+
+  "first_name": "Lucille",
+    "last_name": "Dee",
+    "last_update": "2019-05-26T08:41:26.591143"
+  }
+]
+

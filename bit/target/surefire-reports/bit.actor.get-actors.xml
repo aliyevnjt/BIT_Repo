@@ -1,0 +1,30 @@
+<testsuite failures="0" name="bit/actor/get-actors.feature" skipped="0" tests="1" time="0.869904">
+  <testcase classname="bit.actor.get-actors" name="Getting actors" time="0.869904">
+    <system-out>Given url 'http://localhost:3000/actor?first_name=eq.Lucille' ............. passed
+Then method get ........................................................... passed
+* print response .......................................................... passed
+And match response[*].first_name == ["Lucille","Lucille"] ................. passed
+Given url 'http://localhost:3000/actor?actor_id=eq.20' .................... passed
+Then request .............................................................. passed
+When method put ........................................................... passed
+And status 204 ............................................................ passed
+* print response .......................................................... passed
+Given url 'http://localhost:3000/actor?actor_id=eq.138' ................... passed
+Then request .............................................................. passed
+When method put ........................................................... passed
+* print response .......................................................... passed
+Given url 'http://localhost:3000/actor?actor_id=eq.20' .................... passed
+Then request .............................................................. passed
+When method put ........................................................... passed
+And status 204 ............................................................ passed
+* print response .......................................................... passed
+Given url 'http://localhost:3000/actor?actor_id=eq.138' ................... passed
+Then request .............................................................. passed
+When method put ........................................................... passed
+* print response .......................................................... passed
+Given url 'http://localhost:3000/actor?first_name=eq.Lucille' ............. passed
+Then method get ........................................................... passed
+* print response .......................................................... passed
+And match response[*].first_name == ["Lucille","Lucille"] ................. passed</system-out>
+  </testcase>
+</testsuite>

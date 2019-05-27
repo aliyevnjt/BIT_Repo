@@ -8,5 +8,6 @@ Feature: Shopping for cars
     Then I select all mandatory fields <make> , <model> , <year>, <miles>, <trim>, and <zipcode>
 
     Examples: 
-      | make     | model   | year   | miles   | trim    | zipcode |
-      | "Toyota" | "Camry" | "2018" | "25 mi" | "L" | "02155" |
+      | make     | model   | year   | miles   | trim  | zipcode |
+      | "Toyota" | "Camry" | "2018" | "25 mi" | "L"   | "02155" |
+      | "BMW"    | "M5"    | "2019" | "50 mi" | "AWD" | "02155" |

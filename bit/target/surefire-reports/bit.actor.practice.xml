@@ -1,0 +1,10 @@
+<testsuite failures="0" name="bit/actor/practice.feature" skipped="0" tests="1" time="0.707255">
+  <testcase classname="bit.actor.practice" name="Calling utils feature file" time="0.707255">
+    <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
+* def sumOfTwoNumbers = addNumbers(4,6) ................................... passed
+* print sumOfTwoNumbers ................................................... passed
+Given url baseUrl + 'actor' ............................................... passed
+Then method get ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>
