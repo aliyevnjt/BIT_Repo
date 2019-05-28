@@ -168,36 +168,36 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Calling utils feature file</span>
+<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">Calling utils feature file</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* call read('classpath:bit/utils/utils.feature')</div>
-<div class="time-cell passed">0.030904</div>
+<div class="time-cell passed">0.02393</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">bit/utils/utils.feature</div>
-<div class="time-cell passed">0.007635</div>
+<div class="time-cell passed">0.006553</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def addNumbers =</div>
-<div class="time-cell passed">0.007507</div>
+<div class="time-cell passed">0.006503</div>
 </div>
 <div class="preformatted">function add(a,b){
 return a + b;
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def baseUrl = urlBase</div>
-<div class="time-cell passed">0.000128</div>
+<div class="time-cell passed">0.00005</div>
 </div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor'</div>
-<div class="time-cell passed">0.003616</div>
+<div class="time-cell passed">0.007204</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request</div>
-<div class="time-cell passed">0.065148</div>
+<div class="time-cell passed">0.043025</div>
 </div>
 <div class="preformatted">{
 "first_name": "Test",
@@ -205,9 +205,9 @@ return a + b;
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Then method post</div>
-<div class="time-cell passed">0.443115</div>
+<div class="time-cell passed">0.470974</div>
 </div>
-<div class="preformatted">09:58:41.130 request:
+<div class="preformatted">21:58:45.798 request:
 1 &gt; POST http://localhost:3000/actor
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -217,34 +217,34 @@ return a + b;
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 {"first_name":"Test","last_name":"Tester"}
 
-09:58:41.183 response time in milliseconds: 51.17
+21:58:45.857 response time in milliseconds: 57.73
 1 &lt; 201
 1 &lt; Content-Range: */*
-1 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
-1 &lt; Location: /actor?actor_id=eq.229
+1 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
+1 &lt; Location: /actor?actor_id=eq.231
 1 &lt; Server: postgrest/5.2.0 (1e732ac)
 1 &lt; Transfer-Encoding: chunked</div>
 <div class="step-row">
 <div class="step-cell passed">And status 201</div>
-<div class="time-cell passed">0.000017</div>
+<div class="time-cell passed">0.000018</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then method get</div>
-<div class="time-cell passed">0.014824</div>
+<div class="time-cell passed">0.020998</div>
 </div>
-<div class="preformatted">09:58:41.187 request:
+<div class="preformatted">21:58:45.861 request:
 2 &gt; GET http://localhost:3000/actor
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Host: localhost:3000
 2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-09:58:41.196 response time in milliseconds: 7.00
+21:58:45.878 response time in milliseconds: 13.24
 2 &lt; 200
 2 &lt; Content-Location: /actor
-2 &lt; Content-Range: 0-206/*
+2 &lt; Content-Range: 0-207/*
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+2 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 2 &lt; Server: postgrest/5.2.0 (1e732ac)
 2 &lt; Transfer-Encoding: chunked
 [{"actor_id":2,"first_name":"Nick","last_name":"Wahlberg","last_update":"2013-05-26T14:47:57.62"}, 
@@ -385,8 +385,8 @@ return a + b;
  {"actor_id":139,"first_name":"Ewan","last_name":"Gooding","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":140,"first_name":"Whoopi","last_name":"Hurt","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":141,"first_name":"Cate","last_name":"Harris","last_update":"2013-05-26T14:47:57.62"}, 
- {"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-26T11:08:57.841315"}, 
- {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-26T11:08:57.812583"}, 
+ {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-27T21:56:04.928"}, 
+ {"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-27T21:56:04.952208"}, 
  {"actor_id":142,"first_name":"Jada","last_name":"Ryder","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":144,"first_name":"Angela","last_name":"Witherspoon","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":145,"first_name":"Kim","last_name":"Allen","last_update":"2013-05-26T14:47:57.62"}, 
@@ -449,247 +449,249 @@ return a + b;
  {"actor_id":1,"first_name":"Cucuruz","last_name":"Cucuruzovic","last_update":"2019-05-19T11:03:55.092651"}, 
  {"actor_id":202,"first_name":"Akif","last_name":"Safarov","last_update":"2019-05-19T11:11:37.067255"}, 
  {"actor_id":203,"first_name":"asadadd","last_name":"Safarova","last_update":"2019-05-19T11:36:19.560814"}, 
- {"actor_id":229,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T09:58:41.16226"}, 
+ {"actor_id":230,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:57:32.45487"}, 
  {"actor_id":214,"first_name":"CRUD_UPDATE","last_name":"CRUDOVIC_UPDATE","last_update":"2019-05-21T21:48:49.563728"}, 
  {"actor_id":218,"first_name":"Nijat","last_name":"Jonny","last_update":"2019-05-17T19:57:49.682175"}, 
  {"actor_id":222,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T20:59:53.520812"}, 
- {"actor_id":224,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T21:00:01.298995"}]</div>
+ {"actor_id":224,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T21:00:01.298995"}, 
+ {"actor_id":231,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:58:45.843196"}]</div>
 <div class="step-row">
 <div class="step-cell passed">* def convertToString = "" + response</div>
-<div class="time-cell passed">0.015406</div>
+<div class="time-cell passed">0.011347</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match convertToString  contains 'Test'</div>
-<div class="time-cell passed">0.006423</div>
+<div class="time-cell passed">0.002948</div>
 </div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [2:23]</span><span class="scenario-name">Get Id of The Actor - Update</span>
+<span class="scenario-keyword">Scenario: [2:24]</span><span class="scenario-name">Get Id of The Actor - Update</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* call read('classpath:bit/utils/utils.feature')</div>
-<div class="time-cell passed">0.018438</div>
+<div class="time-cell passed">0.015758</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">bit/utils/utils.feature</div>
-<div class="time-cell passed">0.000893</div>
+<div class="time-cell passed">0.000679</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def addNumbers =</div>
-<div class="time-cell passed">0.000875</div>
+<div class="time-cell passed">0.000657</div>
 </div>
 <div class="preformatted">function add(a,b){
 return a + b;
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def baseUrl = urlBase</div>
-<div class="time-cell passed">0.000019</div>
+<div class="time-cell passed">0.000022</div>
 </div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor?first_name=eq.Test'</div>
-<div class="time-cell passed">0.002478</div>
+<div class="time-cell passed">0.002404</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then method get</div>
-<div class="time-cell passed">0.028282</div>
+<div class="time-cell passed">0.012733</div>
 </div>
-<div class="preformatted">09:58:41.258 request:
+<div class="preformatted">21:58:45.936 request:
 1 &gt; GET http://localhost:3000/actor?first_name=eq.Test
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: localhost:3000
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-09:58:41.277 response time in milliseconds: 18.78
+21:58:45.945 response time in milliseconds: 8.22
 1 &lt; 200
 1 &lt; Content-Location: /actor?first_name=eq.Test
-1 &lt; Content-Range: 0-0/*
+1 &lt; Content-Range: 0-1/*
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+1 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 1 &lt; Server: postgrest/5.2.0 (1e732ac)
 1 &lt; Transfer-Encoding: chunked
-[{"actor_id":229,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T09:58:41.16226"}]</div>
+[{"actor_id":230,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:57:32.45487"}, 
+ {"actor_id":231,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:58:45.843196"}]</div>
 <div class="step-row">
 <div class="step-cell passed">And status 200</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.00001</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def actor_id_from_response = response[0].actor_id</div>
-<div class="time-cell passed">0.029933</div>
+<div class="time-cell passed">0.034595</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print actor_id_from_response</div>
-<div class="time-cell passed">0.0003</div>
+<div class="time-cell passed">0.000322</div>
 </div>
-<div class="preformatted">09:58:41.309 [print] 229</div>
+<div class="preformatted">21:58:45.981 [print] 230</div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response</div>
-<div class="time-cell passed">0.002741</div>
+<div class="time-cell passed">0.006716</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"}</div>
-<div class="time-cell passed">0.000181</div>
+<div class="time-cell passed">0.000329</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* set requestBody.actor_id = actor_id_from_response</div>
-<div class="time-cell passed">0.000585</div>
+<div class="time-cell passed">0.001359</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* set requestBody.first_name = 'Test2'</div>
-<div class="time-cell passed">0.002676</div>
+<div class="time-cell passed">0.003694</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then request requestBody</div>
-<div class="time-cell passed">0.000019</div>
+<div class="time-cell passed">0.000023</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And method put</div>
-<div class="time-cell passed">0.013369</div>
+<div class="time-cell passed">0.023805</div>
 </div>
-<div class="preformatted">09:58:41.317 request:
-2 &gt; PUT http://localhost:3000/actor?actor_id=eq.229
+<div class="preformatted">21:58:45.995 request:
+2 &gt; PUT http://localhost:3000/actor?actor_id=eq.230
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Content-Length: 101
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Host: localhost:3000
 2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
-{"actor_id":229,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"}
+{"actor_id":230,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"}
 
-09:58:41.329 response time in milliseconds: 11.50
+21:58:46.018 response time in milliseconds: 22.07
 2 &lt; 204
-2 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+2 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 2 &lt; Server: postgrest/5.2.0 (1e732ac)</div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response</div>
-<div class="time-cell passed">0.000277</div>
+<div class="time-cell passed">0.00025</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And method get</div>
-<div class="time-cell passed">0.006514</div>
+<div class="time-cell passed">0.010893</div>
 </div>
-<div class="preformatted">09:58:41.331 request:
-3 &gt; GET http://localhost:3000/actor?actor_id=eq.229
+<div class="preformatted">21:58:46.019 request:
+3 &gt; GET http://localhost:3000/actor?actor_id=eq.230
 3 &gt; Accept-Encoding: gzip,deflate
 3 &gt; Connection: Keep-Alive
 3 &gt; Host: localhost:3000
 3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-09:58:41.336 response time in milliseconds: 4.54
+21:58:46.029 response time in milliseconds: 9.18
 3 &lt; 200
-3 &lt; Content-Location: /actor?actor_id=eq.229
+3 &lt; Content-Location: /actor?actor_id=eq.230
 3 &lt; Content-Range: 0-0/*
 3 &lt; Content-Type: application/json; charset=utf-8
-3 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+3 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 3 &lt; Server: postgrest/5.2.0 (1e732ac)
 3 &lt; Transfer-Encoding: chunked
-[{"actor_id":229,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T09:58:41.322967"}]</div>
+[{"actor_id":230,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T21:58:46.00241"}]</div>
 <div class="step-row">
 <div class="step-cell passed">And match response[0].first_name == 'Test2'</div>
-<div class="time-cell passed">0.00921</div>
+<div class="time-cell passed">0.003054</div>
 </div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [3:39]</span><span class="scenario-name">Delete Actor</span>
+<span class="scenario-keyword">Scenario: [3:40]</span><span class="scenario-name">Delete Actor</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* call read('classpath:bit/utils/utils.feature')</div>
-<div class="time-cell passed">0.02109</div>
+<div class="time-cell passed">0.008945</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">bit/utils/utils.feature</div>
-<div class="time-cell passed">0.001102</div>
+<div class="time-cell passed">0.000545</div>
 </div>
 <div class="scenario-steps-nested">
 <div class="step-row">
 <div class="step-cell passed">* def addNumbers =</div>
-<div class="time-cell passed">0.001083</div>
+<div class="time-cell passed">0.000528</div>
 </div>
 <div class="preformatted">function add(a,b){
 return a + b;
 }</div>
 <div class="step-row">
 <div class="step-cell passed">* def baseUrl = urlBase</div>
-<div class="time-cell passed">0.00002</div>
+<div class="time-cell passed">0.000017</div>
 </div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor?first_name=eq.Test2'</div>
-<div class="time-cell passed">0.00326</div>
+<div class="time-cell passed">0.002538</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Then method get</div>
-<div class="time-cell passed">0.019134</div>
+<div class="time-cell passed">0.006575</div>
 </div>
-<div class="preformatted">09:58:41.382 request:
+<div class="preformatted">21:58:46.058 request:
 1 &gt; GET http://localhost:3000/actor?first_name=eq.Test2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: localhost:3000
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-09:58:41.396 response time in milliseconds: 13.58
+21:58:46.063 response time in milliseconds: 4.03
 1 &lt; 200
 1 &lt; Content-Location: /actor?first_name=eq.Test2
 1 &lt; Content-Range: 0-0/*
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+1 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 1 &lt; Server: postgrest/5.2.0 (1e732ac)
 1 &lt; Transfer-Encoding: chunked
-[{"actor_id":229,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T09:58:41.322967"}]</div>
+[{"actor_id":230,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T21:58:46.00241"}]</div>
 <div class="step-row">
 <div class="step-cell passed">* def actorID_from_response = response[0].actor_id</div>
-<div class="time-cell passed">0.000848</div>
+<div class="time-cell passed">0.000935</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor?actor_id=eq.' + actorID_from_response</div>
-<div class="time-cell passed">0.003605</div>
+<div class="time-cell passed">0.003203</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And method delete</div>
-<div class="time-cell passed">0.021524</div>
+<div class="time-cell passed">0.009737</div>
 </div>
-<div class="preformatted">09:58:41.404 request:
-2 &gt; DELETE http://localhost:3000/actor?actor_id=eq.229
+<div class="preformatted">21:58:46.070 request:
+2 &gt; DELETE http://localhost:3000/actor?actor_id=eq.230
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Host: localhost:3000
 2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-09:58:41.423 response time in milliseconds: 15.69
+21:58:46.077 response time in milliseconds: 6.92
 2 &lt; 204
 2 &lt; Content-Range: */*
-2 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+2 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 2 &lt; Server: postgrest/5.2.0 (1e732ac)</div>
 <div class="step-row">
 <div class="step-cell passed">And status 204</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.000009</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url baseUrl + 'actor'</div>
-<div class="time-cell passed">0.001678</div>
+<div class="time-cell passed">0.000379</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And method get</div>
-<div class="time-cell passed">0.01171</div>
+<div class="time-cell passed">0.022608</div>
 </div>
-<div class="preformatted">09:58:41.429 request:
+<div class="preformatted">21:58:46.079 request:
 3 &gt; GET http://localhost:3000/actor
 3 &gt; Accept-Encoding: gzip,deflate
 3 &gt; Connection: Keep-Alive
 3 &gt; Host: localhost:3000
 3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-09:58:41.436 response time in milliseconds: 5.68
+21:58:46.100 response time in milliseconds: 19.95
 3 &lt; 200
 3 &lt; Content-Location: /actor
-3 &lt; Content-Range: 0-205/*
+3 &lt; Content-Range: 0-206/*
 3 &lt; Content-Type: application/json; charset=utf-8
-3 &lt; Date: Mon, 27 May 2019 13:58:41 GMT
+3 &lt; Date: Tue, 28 May 2019 01:58:45 GMT
 3 &lt; Server: postgrest/5.2.0 (1e732ac)
 3 &lt; Transfer-Encoding: chunked
 [{"actor_id":2,"first_name":"Nick","last_name":"Wahlberg","last_update":"2013-05-26T14:47:57.62"}, 
@@ -830,8 +832,8 @@ return a + b;
  {"actor_id":139,"first_name":"Ewan","last_name":"Gooding","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":140,"first_name":"Whoopi","last_name":"Hurt","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":141,"first_name":"Cate","last_name":"Harris","last_update":"2013-05-26T14:47:57.62"}, 
- {"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-26T11:08:57.841315"}, 
- {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-26T11:08:57.812583"}, 
+ {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-27T21:56:04.928"}, 
+ {"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-27T21:56:04.952208"}, 
  {"actor_id":142,"first_name":"Jada","last_name":"Ryder","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":144,"first_name":"Angela","last_name":"Witherspoon","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":145,"first_name":"Kim","last_name":"Allen","last_update":"2013-05-26T14:47:57.62"}, 
@@ -897,10 +899,11 @@ return a + b;
  {"actor_id":214,"first_name":"CRUD_UPDATE","last_name":"CRUDOVIC_UPDATE","last_update":"2019-05-21T21:48:49.563728"}, 
  {"actor_id":218,"first_name":"Nijat","last_name":"Jonny","last_update":"2019-05-17T19:57:49.682175"}, 
  {"actor_id":222,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T20:59:53.520812"}, 
- {"actor_id":224,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T21:00:01.298995"}]</div>
+ {"actor_id":224,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T21:00:01.298995"}, 
+ {"actor_id":231,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:58:45.843196"}]</div>
 <div class="step-row">
 <div class="step-cell passed">And match "" + response !contains 'Test2'</div>
-<div class="time-cell passed">0.018868</div>
+<div class="time-cell passed">0.00202</div>
 </div>
 </div>
 </div>

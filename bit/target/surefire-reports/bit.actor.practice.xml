@@ -1,10 +1,72 @@
-<testsuite failures="0" name="bit/actor/practice.feature" skipped="0" tests="1" time="0.707255">
-  <testcase classname="bit.actor.practice" name="Calling utils feature file" time="0.707255">
+<testsuite failures="0" name="bit/actor/practice.feature" skipped="0" tests="3" time="1.919531">
+  <testcase classname="bit.actor.practice" name="Calling utils feature file" time="0.572264">
     <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
-* def sumOfTwoNumbers = addNumbers(4,6) ................................... passed
-* print sumOfTwoNumbers ................................................... passed
 Given url baseUrl + 'actor' ............................................... passed
+And request ............................................................... passed
+Then method post .......................................................... passed
+And status 201 ............................................................ passed
 Then method get ........................................................... passed
-* print response .......................................................... passed</system-out>
+* def convertToString = "" + response ..................................... passed
+And match convertToString  contains 'Test' ................................ passed</system-out>
+  </testcase>
+  <testcase classname="bit.actor.practice" name="Get Id of The Actor - Update" time="0.698305">
+    <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
+Given url baseUrl + 'actor' ............................................... passed
+And request ............................................................... passed
+Then method post .......................................................... passed
+And status 201 ............................................................ passed
+Then method get ........................................................... passed
+* def convertToString = "" + response ..................................... passed
+And match convertToString  contains 'Test' ................................ passed
+* call read('classpath:bit/utils/utils.feature') .......................... passed
+Given url baseUrl + 'actor?first_name=eq.Test' ............................ passed
+Then method get ........................................................... passed
+And status 200 ............................................................ passed
+* def actor_id_from_response = response[0].actor_id ....................... passed
+* print actor_id_from_response ............................................ passed
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
+* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"} . passed
+* set requestBody.actor_id = actor_id_from_response ....................... passed
+* set requestBody.first_name = 'Test2' .................................... passed
+Then request requestBody .................................................. passed
+And method put ............................................................ passed
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
+And method get ............................................................ passed
+And match response[0].first_name == 'Test2' ............................... passed</system-out>
+  </testcase>
+  <testcase classname="bit.actor.practice" name="Delete Actor" time="0.648963">
+    <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
+Given url baseUrl + 'actor' ............................................... passed
+And request ............................................................... passed
+Then method post .......................................................... passed
+And status 201 ............................................................ passed
+Then method get ........................................................... passed
+* def convertToString = "" + response ..................................... passed
+And match convertToString  contains 'Test' ................................ passed
+* call read('classpath:bit/utils/utils.feature') .......................... passed
+Given url baseUrl + 'actor?first_name=eq.Test' ............................ passed
+Then method get ........................................................... passed
+And status 200 ............................................................ passed
+* def actor_id_from_response = response[0].actor_id ....................... passed
+* print actor_id_from_response ............................................ passed
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
+* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"} . passed
+* set requestBody.actor_id = actor_id_from_response ....................... passed
+* set requestBody.first_name = 'Test2' .................................... passed
+Then request requestBody .................................................. passed
+And method put ............................................................ passed
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
+And method get ............................................................ passed
+And match response[0].first_name == 'Test2' ............................... passed
+* call read('classpath:bit/utils/utils.feature') .......................... passed
+Given url baseUrl + 'actor?first_name=eq.Test2' ........................... passed
+Then method get ........................................................... passed
+* def actorID_from_response = response[0].actor_id ........................ passed
+Given url baseUrl + 'actor?actor_id=eq.' + actorID_from_response .......... passed
+And method delete ......................................................... passed
+And status 204 ............................................................ passed
+Given url baseUrl + 'actor' ............................................... passed
+And method get ............................................................ passed
+And match "" + response !contains 'Test2' ................................. passed</system-out>
   </testcase>
 </testsuite>

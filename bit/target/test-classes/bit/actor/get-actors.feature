@@ -1,5 +1,6 @@
 Feature: Get All Actors
-
+	
+	
   Scenario: Getting actors
     Given url 'http://localhost:3000/actor?first_name=eq.Lucille'
     Then method get

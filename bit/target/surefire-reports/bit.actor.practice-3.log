@@ -1,36 +1,48 @@
-21:58:45.798 request:
-1 > POST http://localhost:3000/actor
+22:10:38.766 request:
+1 > GET http://localhost:3000/actor?first_name=eq.Test2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 42
-1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:3000
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
-{"first_name":"Test","last_name":"Tester"}
 
-21:58:45.857 response time in milliseconds: 57.73
-1 < 201
-1 < Content-Range: */*
-1 < Date: Tue, 28 May 2019 01:58:45 GMT
-1 < Location: /actor?actor_id=eq.231
+22:10:38.906 response time in milliseconds: 137.76
+1 < 200
+1 < Content-Location: /actor?first_name=eq.Test2
+1 < Content-Range: 0-0/*
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 28 May 2019 02:10:38 GMT
 1 < Server: postgrest/5.2.0 (1e732ac)
 1 < Transfer-Encoding: chunked
+[{"actor_id":232,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T22:00:23.839236"}]
 
-21:58:45.861 request:
-2 > GET http://localhost:3000/actor
+22:10:38.963 request:
+2 > DELETE http://localhost:3000/actor?actor_id=eq.232
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Host: localhost:3000
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
 
-21:58:45.878 response time in milliseconds: 13.24
-2 < 200
-2 < Content-Location: /actor
-2 < Content-Range: 0-207/*
-2 < Content-Type: application/json; charset=utf-8
-2 < Date: Tue, 28 May 2019 01:58:45 GMT
+22:10:39.024 response time in milliseconds: 61.00
+2 < 204
+2 < Content-Range: */*
+2 < Date: Tue, 28 May 2019 02:10:38 GMT
 2 < Server: postgrest/5.2.0 (1e732ac)
-2 < Transfer-Encoding: chunked
+
+22:10:39.026 request:
+3 > GET http://localhost:3000/actor
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: localhost:3000
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+
+22:10:39.060 response time in milliseconds: 29.06
+3 < 200
+3 < Content-Location: /actor
+3 < Content-Range: 0-207/*
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Tue, 28 May 2019 02:10:38 GMT
+3 < Server: postgrest/5.2.0 (1e732ac)
+3 < Transfer-Encoding: chunked
 [{"actor_id":2,"first_name":"Nick","last_name":"Wahlberg","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":3,"first_name":"Ed","last_name":"Chase","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":4,"first_name":"Jennifer","last_name":"Davis","last_update":"2013-05-26T14:47:57.62"}, 
@@ -169,8 +181,8 @@
  {"actor_id":139,"first_name":"Ewan","last_name":"Gooding","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":140,"first_name":"Whoopi","last_name":"Hurt","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":141,"first_name":"Cate","last_name":"Harris","last_update":"2013-05-26T14:47:57.62"}, 
- {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-27T21:56:04.928"}, 
- {"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-27T21:56:04.952208"}, 
+ {"actor_id":138,"first_name":"Lucille","last_name":"Dee","last_update":"2019-05-27T22:08:06.994393"}, 
+ {"actor_id":20,"first_name":"Lucille","last_name":"Tracy","last_update":"2019-05-27T22:08:06.988544"}, 
  {"actor_id":142,"first_name":"Jada","last_name":"Ryder","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":144,"first_name":"Angela","last_name":"Witherspoon","last_update":"2013-05-26T14:47:57.62"}, 
  {"actor_id":145,"first_name":"Kim","last_name":"Allen","last_update":"2013-05-26T14:47:57.62"}, 
@@ -233,10 +245,10 @@
  {"actor_id":1,"first_name":"Cucuruz","last_name":"Cucuruzovic","last_update":"2019-05-19T11:03:55.092651"}, 
  {"actor_id":202,"first_name":"Akif","last_name":"Safarov","last_update":"2019-05-19T11:11:37.067255"}, 
  {"actor_id":203,"first_name":"asadadd","last_name":"Safarova","last_update":"2019-05-19T11:36:19.560814"}, 
- {"actor_id":230,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:57:32.45487"}, 
  {"actor_id":214,"first_name":"CRUD_UPDATE","last_name":"CRUDOVIC_UPDATE","last_update":"2019-05-21T21:48:49.563728"}, 
  {"actor_id":218,"first_name":"Nijat","last_name":"Jonny","last_update":"2019-05-17T19:57:49.682175"}, 
  {"actor_id":222,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T20:59:53.520812"}, 
  {"actor_id":224,"first_name":"CRUD2_UP","last_name":"CRUDOVIC2_UP","last_update":"2019-05-23T21:00:01.298995"}, 
- {"actor_id":231,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T21:58:45.843196"}]
+ {"actor_id":233,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T22:00:23.7478"}, 
+ {"actor_id":234,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T22:10:38.832225"}]
 

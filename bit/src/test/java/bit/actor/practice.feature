@@ -1,9 +1,11 @@
+@qwe
 Feature: Calling another feature file
+ 
  
 	Background:
 	* call read('classpath:bit/utils/utils.feature')
  
- 
+ @qwe
   Scenario: Calling utils feature file
   Given url baseUrl + 'actor'
   And request
@@ -18,7 +20,7 @@ Feature: Calling another feature file
   Then method get
   * def convertToString = "" + response
   And match convertToString  contains 'Test'
-  
+  @qwe
   Scenario: Get Id of The Actor - Update
   Given url baseUrl + 'actor?first_name=eq.Test'
   Then method get
@@ -34,7 +36,7 @@ Feature: Calling another feature file
   Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response
   And method get
   And match response[0].first_name == 'Test2'
-  
+  @qwe
   Scenario: Delete Actor
   Given url baseUrl + 'actor?first_name=eq.Test2'
   Then method get

@@ -1,6 +1,0 @@
-<testsuite failures="0" name="bit/utils/utils.feature" skipped="0" tests="1" time="0.004279">
-  <testcase classname="bit.utils.utils" name="Why did we delete everything?" time="0.004279">
-    <system-out>* def addNumbers = ........................................................ passed
-* def baseUrl = urlBase ................................................... passed</system-out>
-  </testcase>
-</testsuite>
