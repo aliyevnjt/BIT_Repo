@@ -23,6 +23,7 @@ public class CarGurusShopNewCar {
 	public void i_am_on_car_gurus_home_page() {
 		System.out.println(System.getProperty("url"));
 	   driver.navigate().to(System.getProperty("url"));
+	   //comment from nijat
 	}
 
 	@When("I click on New Cars")
