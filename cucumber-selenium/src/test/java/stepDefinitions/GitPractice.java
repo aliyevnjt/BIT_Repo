@@ -4,6 +4,8 @@ public class GitPractice {
 	public static void main(String[] args) {
 		
 		// comment from Sait
-		// comment from Sait 2
+    // comment from nijat
+    // comment from Sait 2
+
 	}
 }
