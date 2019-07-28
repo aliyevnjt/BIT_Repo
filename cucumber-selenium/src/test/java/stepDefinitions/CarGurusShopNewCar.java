@@ -24,6 +24,7 @@ public class CarGurusShopNewCar {
 		System.out.println(System.getProperty("url"));
 	   driver.navigate().to(System.getProperty("url"));
 	   //comment from nijat
+	   //comment from nijat 2
 	}
 
 	@When("I click on New Cars")
