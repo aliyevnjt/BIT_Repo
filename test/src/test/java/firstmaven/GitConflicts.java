@@ -6,6 +6,7 @@ public class GitConflicts {
 		// Note from nijat
 		// note from Mehmet in Remote repo
 		// Hi, from Mehmet in Local repo
+		// 2nd Hi, from Mehmet in Local repo
 
 	}
 
