@@ -6,6 +6,8 @@ public class GitConflicts {
 		// Note from nijat
 		
 		// Note from Mehmet
+		
+		// Note from Nijat 2
 	}
 
 }
