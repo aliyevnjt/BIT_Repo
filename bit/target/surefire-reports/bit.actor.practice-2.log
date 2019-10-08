@@ -1,52 +1,52 @@
-22:10:38.765 request:
+15:14:04.161 request:
 1 > GET http://localhost:3000/actor?first_name=eq.Test
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: localhost:3000
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-22:10:38.914 response time in milliseconds: 137.18
+15:14:04.181 response time in milliseconds: 18.85
 1 < 200
 1 < Content-Location: /actor?first_name=eq.Test
 1 < Content-Range: 0-0/*
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Tue, 28 May 2019 02:10:38 GMT
+1 < Date: Mon, 23 Sep 2019 19:14:03 GMT
 1 < Server: postgrest/5.2.0 (1e732ac)
 1 < Transfer-Encoding: chunked
-[{"actor_id":233,"first_name":"Test","last_name":"Tester","last_update":"2019-05-27T22:00:23.7478"}]
+[{"actor_id":370,"first_name":"Test","last_name":"Tester","last_update":"2019-09-23T15:14:04.063197"}]
 
-22:10:38.940 [print] 233
-22:10:38.971 request:
-2 > PUT http://localhost:3000/actor?actor_id=eq.233
+15:14:04.183 [print] 370
+15:14:04.194 request:
+2 > PUT http://localhost:3000/actor?actor_id=eq.370
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Content-Length: 101
 2 > Content-Type: application/json; charset=UTF-8
 2 > Host: localhost:3000
-2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
-{"actor_id":233,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"}
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"actor_id":370,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"}
 
-22:10:39.103 response time in milliseconds: 130.76
+15:14:04.227 response time in milliseconds: 33.01
 2 < 204
-2 < Date: Tue, 28 May 2019 02:10:38 GMT
+2 < Date: Mon, 23 Sep 2019 19:14:03 GMT
 2 < Server: postgrest/5.2.0 (1e732ac)
 
-22:10:39.105 request:
-3 > GET http://localhost:3000/actor?actor_id=eq.233
+15:14:04.230 request:
+3 > GET http://localhost:3000/actor?actor_id=eq.370
 3 > Accept-Encoding: gzip,deflate
 3 > Connection: Keep-Alive
 3 > Host: localhost:3000
-3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_181)
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
 
-22:10:39.112 response time in milliseconds: 6.41
+15:14:04.302 response time in milliseconds: 72.68
 3 < 200
-3 < Content-Location: /actor?actor_id=eq.233
+3 < Content-Location: /actor?actor_id=eq.370
 3 < Content-Range: 0-0/*
 3 < Content-Type: application/json; charset=utf-8
-3 < Date: Tue, 28 May 2019 02:10:38 GMT
+3 < Date: Mon, 23 Sep 2019 19:14:04 GMT
 3 < Server: postgrest/5.2.0 (1e732ac)
 3 < Transfer-Encoding: chunked
-[{"actor_id":233,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T22:10:39.02043"}]
+[{"actor_id":370,"first_name":"Test2","last_name":"Tester","last_update":"2019-09-23T15:14:04.202421"}]
 
-{"actor_id":232,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-27T22:00:23.839236"}]
+"actor_id":264,"first_name":"Test2","last_name":"Tester","last_update":"2019-05-30T19:09:58.313166"}]
 

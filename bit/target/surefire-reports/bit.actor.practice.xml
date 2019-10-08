@@ -1,5 +1,5 @@
-<testsuite failures="0" name="bit/actor/practice.feature" skipped="0" tests="3" time="1.919531">
-  <testcase classname="bit.actor.practice" name="Calling utils feature file" time="0.572264">
+<testsuite failures="2" name="bit/actor/practice.feature" skipped="0" tests="3" time="3.61899">
+  <testcase classname="bit.actor.practice" name="Calling utils feature file" time="1.28028">
     <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
 Given url baseUrl + 'actor' ............................................... passed
 And request ............................................................... passed
@@ -9,8 +9,8 @@ Then method get ........................................................... pass
 * def convertToString = "" + response ..................................... passed
 And match convertToString  contains 'Test' ................................ passed</system-out>
   </testcase>
-  <testcase classname="bit.actor.practice" name="Get Id of The Actor - Update" time="0.698305">
-    <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
+  <testcase classname="bit.actor.practice" name="Get Id of The Actor - Update" time="1.186848">
+    <failure message="practice.feature:28 - javascript evaluation failed: response[0].actor_id, Index: 0, Size: 0">* call read('classpath:bit/utils/utils.feature') .......................... passed
 Given url baseUrl + 'actor' ............................................... passed
 And request ............................................................... passed
 Then method post .......................................................... passed
@@ -22,20 +22,25 @@ And match convertToString  contains 'Test' ................................ pass
 Given url baseUrl + 'actor?first_name=eq.Test' ............................ passed
 Then method get ........................................................... passed
 And status 200 ............................................................ passed
-* def actor_id_from_response = response[0].actor_id ....................... passed
-* print actor_id_from_response ............................................ passed
-Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
-* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"} . passed
-* set requestBody.actor_id = actor_id_from_response ....................... passed
-* set requestBody.first_name = 'Test2' .................................... passed
-Then request requestBody .................................................. passed
-And method put ............................................................ passed
-Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
-And method get ............................................................ passed
-And match response[0].first_name == 'Test2' ............................... passed</system-out>
+* def actor_id_from_response = response[0].actor_id ....................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: practice.feature:28 - javascript evaluation failed: response[0].actor_id, Index: 0, Size: 0&#13;
+	at ✽.* def actor_id_from_response = response[0].actor_id (practice.feature:28)&#13;
+
+* print actor_id_from_response ............................................ skipped
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... skipped
+* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"} . skipped
+* set requestBody.actor_id = actor_id_from_response ....................... skipped
+* set requestBody.first_name = 'Test2' .................................... skipped
+Then request requestBody .................................................. skipped
+And method put ............................................................ skipped
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... skipped
+And method get ............................................................ skipped
+And match response[0].first_name == 'Test2' ............................... skipped</failure>
   </testcase>
-  <testcase classname="bit.actor.practice" name="Delete Actor" time="0.648963">
-    <system-out>* call read('classpath:bit/utils/utils.feature') .......................... passed
+  <testcase classname="bit.actor.practice" name="Delete Actor" time="1.151862">
+    <failure message="practice.feature:43 - javascript evaluation failed: response[0].actor_id, Index: 0, Size: 0">* call read('classpath:bit/utils/utils.feature') .......................... passed
 Given url baseUrl + 'actor' ............................................... passed
 And request ............................................................... passed
 Then method post .......................................................... passed
@@ -47,26 +52,36 @@ And match convertToString  contains 'Test' ................................ pass
 Given url baseUrl + 'actor?first_name=eq.Test' ............................ passed
 Then method get ........................................................... passed
 And status 200 ............................................................ passed
-* def actor_id_from_response = response[0].actor_id ....................... passed
-* print actor_id_from_response ............................................ passed
-Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
-* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"} . passed
-* set requestBody.actor_id = actor_id_from_response ....................... passed
-* set requestBody.first_name = 'Test2' .................................... passed
-Then request requestBody .................................................. passed
-And method put ............................................................ passed
-Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... passed
-And method get ............................................................ passed
-And match response[0].first_name == 'Test2' ............................... passed
+* def actor_id_from_response = response[0].actor_id ....................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: practice.feature:28 - javascript evaluation failed: response[0].actor_id, Index: 0, Size: 0&#13;
+	at ✽.* def actor_id_from_response = response[0].actor_id (practice.feature:28)&#13;
+
+* print actor_id_from_response ............................................ skipped
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... skipped
+* def requestBody = {"actor_id":1,"first_name":"Test","last_name":"Tester","last_update":"2019-05-26T11:18:41.002993"} . skipped
+* set requestBody.actor_id = actor_id_from_response ....................... skipped
+* set requestBody.first_name = 'Test2' .................................... skipped
+Then request requestBody .................................................. skipped
+And method put ............................................................ skipped
+Given url baseUrl + 'actor?actor_id=eq.' + actor_id_from_response ......... skipped
+And method get ............................................................ skipped
+And match response[0].first_name == 'Test2' ............................... skipped
 * call read('classpath:bit/utils/utils.feature') .......................... passed
 Given url baseUrl + 'actor?first_name=eq.Test2' ........................... passed
 Then method get ........................................................... passed
-* def actorID_from_response = response[0].actor_id ........................ passed
-Given url baseUrl + 'actor?actor_id=eq.' + actorID_from_response .......... passed
-And method delete ......................................................... passed
-And status 204 ............................................................ passed
-Given url baseUrl + 'actor' ............................................... passed
-And method get ............................................................ passed
-And match "" + response !contains 'Test2' ................................. passed</system-out>
+* def actorID_from_response = response[0].actor_id ........................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: practice.feature:43 - javascript evaluation failed: response[0].actor_id, Index: 0, Size: 0&#13;
+	at ✽.* def actorID_from_response = response[0].actor_id (practice.feature:43)&#13;
+
+Given url baseUrl + 'actor?actor_id=eq.' + actorID_from_response .......... skipped
+And method delete ......................................................... skipped
+And status 204 ............................................................ skipped
+Given url baseUrl + 'actor' ............................................... skipped
+And method get ............................................................ skipped
+And match "" + response !contains 'Test2' ................................. skipped</failure>
   </testcase>
 </testsuite>
