@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-3"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"practice[1:9]","start":271,"end":856,"title":"practice[1:9] 271-856"},{"id":2,"group":2,"content":"practice[2:24]","start":271,"end":983,"title":"practice[2:24] 271-983"},{"id":3,"group":3,"content":"practice[3:40]","start":272,"end":933,"title":"practice[3:40] 272-933"}]);
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-3"},{"id":4,"content":"ForkJoinPool-1-worker-5"},{"id":5,"content":"ForkJoinPool-1-worker-4"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"get-actors[1:4]","start":765,"end":2126,"title":"get-actors[1:4] 765-2126"},{"id":2,"group":2,"content":"practice[1:9]","start":764,"end":2056,"title":"practice[1:9] 764-2056"},{"id":3,"group":3,"content":"practice[2:24]","start":762,"end":1962,"title":"practice[2:24] 762-1962"},{"id":4,"group":4,"content":"practice[3:40]","start":763,"end":1927,"title":"practice[3:40] 763-1927"},{"id":5,"group":5,"content":"utils[1:5]","start":762,"end":788,"title":"utils[1:5] 762-788"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });
