@@ -2,6 +2,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -16,7 +17,9 @@ public class Driver {
 		switch (ConfigurationReader.getProperty("browser")) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions op = new ChromeOptions();
+			
+			driver = new ChromeDriver(op);
 			return driver;
 
 		case "firefox":

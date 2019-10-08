@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/resources/functionaltests", 
 
 		glue = { "stepDefinitions" },
-		tags = {""},
+		tags = {"@CarGuru"},
 		dryRun = false
 
 		)
